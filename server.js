@@ -9,7 +9,7 @@ const app = express();
 mongoDb();
 app.use(
   cors({
-    origin: "http://todos-fronted.vercel.app/",
+    origin: "http://todos-fronted.vercel.app",
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   }),
