@@ -8,7 +8,7 @@ dotenv.config()
 const app=express()
 mongoDb()
 app.use(cors({
-    origin:"https://todo-web-fronted.vercel.app/"
+    origin:"http://todos-fronted.vercel.app/"
 }))
 app.use(express.json())
 app.use("/app",routes)
